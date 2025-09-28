@@ -1,0 +1,76 @@
+{
+    "header": {
+        "logoLabel": "Logo",
+        "menu": {
+            "home": "Home",
+            "about": "About Me",
+            "skills": "Skills",
+            "portfolio": "Portfolio",
+            "contacts": "Contacts"
+        },
+        "switches": {
+            "langLabel": "Language switch",
+            "themeLabel": "Theme switch"
+        },
+        "burgerMenu": {
+            "title": "Open menu",
+            "ariaLabel": "Open menu"
+        },
+        "mobileMenu": {
+            "home": "Home",
+            "about": "About Me",
+            "skills": "Skills",
+            "portfolio": "Portfolio",
+            "contacts": "Contacts"
+        }
+    },
+    "hero": {
+        "title": "Hello<br>I am <span class=\"hero__title--name\">Dmitry</span>,<br>Web Developer",
+        "description": "I build websites that don't break on phones, don't load forever, and don't make users suffer. If you need a developer you can trust with your project — you're in the right place.",
+        "scrollLink": {
+            "aria-label": "Go to contacts"
+        },
+        "scrollText": "Write to me",
+        "card": {
+            "img": {
+                "alt": "My portrait"
+            },
+            "name": "Dmitry",
+            "profession": "Frontend Developer",
+            "location": "Belarus",
+            "status": "Freelancer"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "imgAlt": "Person with a laptop",
+        "paragraphs": [
+            "Hi! My name is Dmitry, and I create websites that work <span>fast</span>, look <span>clean</span>, and bring <span>joy</span> to users. For me, programming isn’t just code — it’s a way to turn an idea into a live, interactive product.",
+            "I work with <span>HTML</span>, <span>CSS</span>, <span>SCSS</span>, and <span>JavaScript</span>, and use <span>Gulp</span> and <span>Vite</span>. I often take on projects using <span>WordPress</span>.",
+            "I can not only <span>create clean layouts</span>, but also <span>design structure</span>, <span>improve performance</span>, and make the website <span>easy to use</span>.",
+            "I take every project seriously: I <span>meet deadlines</span>, <span>write clear code</span>, and <span>pay attention to detail</span>. I'm open to collaboration — feel free to reach out if you're looking for a reliable developer."
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "Skills, tools and technologies I’m good at:"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "description": "Some examples of projects I've worked on:",
+        "cards": [
+            {
+                "title": "Aesthetic Space",
+                "text": "Interior design studio website featuring responsive layout, interactive slider, and animated elements. Includes a pop-up form, cross-browser compatibility, accessibility compliance, and optimized for fast page loading."
+            },
+            {
+                "title": "Survive At All Costs",
+                "text": "Interactive one-page website for a computer game. Features responsive design, multilingual support, animations, and a slider. Ensures cross-browser compatibility, accessibility, and fast page loading."
+            }
+        ]
+    },
+    "footer": {
+        "title": "Contacts",
+        "description": "Open to interesting challenges, unconventional ideas, and simply great projects. Don’t hesitate — reach out!"
+    }
+}
