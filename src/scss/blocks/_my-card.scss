@@ -1,0 +1,86 @@
+@use '../helpers' as *;
+
+.my-card {
+    border-radius: rem(160) 0;
+    border: var(--border-fat-accent);
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--box-shadow);
+    padding: rem(50) rem(30);
+    max-width: rem(320);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: calc(var(--margin-16) * 2);
+
+    @include mobile-s {
+        padding: rem(30) rem(25);
+        max-width: rem(290);
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        border-radius: 50%;
+        margin-bottom: var(--margin-16);
+        border: var(--border-fat-accent);
+
+    }
+
+    &__name {
+
+        margin-bottom: rem(5);
+    }
+
+    &__profession {}
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--margin-16);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+    }
+
+    &__item-link,
+    &__item {
+        display: flex;
+        column-gap: rem(5);
+    }
+
+    &__item {
+        svg {
+            color: var(--color-accent);
+        }
+    }
+
+
+
+    &__skills {
+        display: flex;
+        gap: rem(10);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__skill {
+        text-transform: uppercase;
+        padding: rem(8);
+        color: var(--color-black);
+        background-color: var(--color-accent);
+        border-radius: var(--border-radius);
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+            transform: scale(1.1)
+        }
+    }
+}

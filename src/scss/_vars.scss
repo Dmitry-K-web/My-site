@@ -1,0 +1,54 @@
+@use 'helpers' as *;
+
+:root {
+    --font-family: "Montserrat";
+    --color-bg: #2E2E2E;
+    --color-bg-rgb: 46, 46, 46;
+    --color-text: #E8E1D8;
+    --color-accent: #D4AF37;
+    --color-bg-secondary: #1F1F1F;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --gradient-flash: linear-gradient(120deg, rgba(255, 255, 255, 0.15) 0%, transparent 80%);
+    --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, .05),
+        4px 4px 12px var(--color-black);
+    --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1),
+        inset 2px 2px 4px rgba(0, 0, 0, .5);
+    --box-shadow-inset-2: inset 4px 4px 12px var(--color-black),
+        inset -4px -4px 12px var(--color-black);
+    --margin-16: #{rem(16)};
+    --border-fat-accent: 4px solid var(--color-accent);
+    --border-radius: #{rem(16)};
+    --border-radius-2: #{rem(40)};
+    --padding-section-y: #{rem(60)};
+    --container-width: #{rem(1270)};
+    --container-padding-x: #{rem(15)};
+    --transition-duration: 0.4s;
+    --header-height: #{rem(112)};
+
+    @include tablet {
+        --header-height: #{rem(92)};
+    }
+
+    @include mobile {
+        --container-padding-x: #{rem(10)};
+        --padding-section-y: #{rem(40)};
+    }
+}
+
+[data-theme="light"] {
+    --color-bg: #FAF7F0;
+    --color-bg-rgb: 250, 247, 240;
+    --color-text: #2E2E2E;
+    --color-accent: #D4AF37;
+    --color-bg-secondary: #EDE8DD;
+
+
+    --box-shadow: -2px -2px 12px hsla(0, 0%, 100%, .05),
+        2px 2px 6px var(--color-black);
+    --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1),
+        inset 2px 2px 4px rgba(0, 0, 0, .5);
+    --box-shadow-inset-2: inset 1px 1px 6px var(--color-black),
+        inset -1px -1px 6px var(--color-black);
+    --gradient-flash: linear-gradient(120deg, rgba(0, 0, 0, 0.15) 0%, transparent 80%);
+}

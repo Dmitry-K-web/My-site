@@ -1,0 +1,111 @@
+@use '../helpers' as *;
+
+.work-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: rem(48);
+    gap: rem(40);
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-secondary);
+    box-shadow:
+        inset 0px 0px 0px hsla(0, 0%, 100%, 0.05),
+        inset 0px 0px 0px var(--color-black),
+        var(--box-shadow);
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+        box-shadow: var(--box-shadow-inset-2);
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+        padding: rem(40);
+        gap: rem(30);
+    }
+
+    &__link {
+        border-radius: var(--border-radius);
+        max-width: rem(520);
+        width: 100%;
+        height: rem(400);
+        justify-self: center;
+
+        @include mobile {
+            height: rem(320);
+        }
+
+        @include mobile-s {
+            height: rem(280);
+        }
+    }
+
+    &__link-img {
+        border-radius: inherit;
+        object-fit: cover;
+        transition: var(--transition-duration);
+        width: 100%;
+
+        @include hover {
+            transform: scale(110%);
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        justify-content: center;
+
+    }
+
+    &__title {}
+
+    &__title-link {
+        display: inline-flex;
+        column-gap: 10px;
+        align-self: start;
+
+        &::after {
+            content: '';
+            background: url(../../public/icons/portfolio-link.svg) 50% / contain no-repeat;
+            @include square(24px);
+        }
+    }
+
+    &__text {}
+
+    &__skills {
+        display: flex;
+        gap: rem(15);
+        flex-wrap: wrap;
+        max-width: rem(500);
+
+    }
+
+    &__skills-item {
+        @include square(68px);
+        @include flex-center;
+        box-shadow: var(--box-shadow-inset);
+        border-radius: 50%;
+        border: rem(2) solid transparent;
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+            border: rem(2) solid var(--color-accent);
+
+            .work-card__skills-img {
+                transform: scale(1.2);
+            }
+        }
+
+        @include mobile {
+            @include square(44px);
+        }
+    }
+
+    &__skills-img {
+        transition-duration: inherit;
+        width: 50%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,60 @@
+@use '../helpers' as *;
+
+.about {
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: rem(40);
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__body {
+        max-width: rem(680);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        row-gap: rem(30);
+
+        @include mobile {
+            margin-inline: auto;
+        }
+    }
+
+    &__title {
+        margin-right: auto;
+    }
+
+    &__text,
+    &__img {
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    &__text {
+        padding: rem(20) rem(30);
+        background-color: var(--color-bg-secondary);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(15);
+
+        span {
+            color: var(--color-accent);
+        }
+    }
+
+    &__img {
+        @include mobile-above {
+            min-height: 100%;
+            object-fit: cover;
+        }
+
+        @include mobile {
+            justify-self: center;
+        }
+
+    }
+}

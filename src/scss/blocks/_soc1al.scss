@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.soc1al {
+    display: flex;
+    gap: rem(30);
+
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(25);
+    }
+
+    &__item {}
+
+    &__link {
+        @include square(64px);
+        @include flex-center;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow-inset);
+
+
+        svg {
+            width: 60%;
+            height: 60%;
+        }
+
+        @include mobile {
+            @include square(52px);
+        }
+    }
+}

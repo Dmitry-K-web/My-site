@@ -1,0 +1,56 @@
+@use '../helpers' as *;
+
+.header {
+    padding-block: rem(24);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: padding var(--transition-duration) ease,
+        box-shadow var(--transition-duration) ease;
+    ;
+
+    @include tablet {
+        padding-block: rem(20);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(var(--color-bg-rgb), 0.7);
+        backdrop-filter: blur(6px);
+        z-index: -1;
+    }
+
+    &--scrolled {
+        padding-block: rem(12);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: rem(15);
+
+    }
+
+    &__logo {}
+
+    &__menu {
+        font-weight: 500;
+    }
+
+    &__switches {
+
+
+        @include tablet {
+            margin-left: auto;
+        }
+    }
+
+    &__burger-button {}
+
+    &__mobile-menu {}
+}

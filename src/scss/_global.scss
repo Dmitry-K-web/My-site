@@ -1,0 +1,49 @@
+@use 'helpers' as *;
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+
+
+body {
+    @include fluid-text(16, 14);
+    font-weight: 400;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding-top: var(--header-height);
+    overflow-x: hidden;
+    font-family: var(--font-family), sans-serif;
+    line-height: 1.1;
+
+    &.lock {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+h1 {
+    @include fluid-text(64, 38);
+}
+
+h2 {
+    @include fluid-text(64, 32);
+    font-weight: 500;
+}
+
+h3,
+.h3 {
+    @include fluid-text(38, 24);
+}
+
+a {
+    @include hover {
+        color: var(--color-accent);
+    }
+}
+
+

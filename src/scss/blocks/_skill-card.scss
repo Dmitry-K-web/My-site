@@ -1,0 +1,51 @@
+@use '../helpers' as *;
+
+.skill-card {
+    position: relative;
+    perspective: rem(800);
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: var(--transition-duration);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.5);
+    border: rem(1) solid transparent;
+    padding: rem(20) ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(14);
+
+    &__img,
+    &__text {
+        transform: translateZ(30px);
+    }
+
+    &__img {
+        @include square(60px);
+    }
+
+    &__text {}
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: var(--gradient-flash);
+        opacity: 0;
+        transition: opacity var(--transition-duration) ease;
+        border-radius: inherit;
+    }
+
+    @include hover {
+        border: 1px solid var(--color-accent);
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.skills {
+
+    &__inner {}
+
+    &__header {}
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+
+        @include tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include mobile-s {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__item {}
+}

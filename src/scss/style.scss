@@ -1,0 +1,32 @@
+@use 'reset';
+@use 'fonts';
+@use 'vars';
+@use 'utils';
+@use 'global';
+
+
+@use 'blocks/preload';
+@use 'blocks/header';
+@use 'blocks/nav-menu';
+@use 'blocks/switches';
+@use 'blocks/burger-button';
+@use 'blocks/mobile-menu';
+
+@use 'blocks/section';
+
+@use 'blocks/hero';
+@use 'blocks/my-card';
+
+@use 'blocks/about';
+
+@use 'blocks/skills';
+@use 'blocks/skill-card';
+
+@use 'blocks/portfolio';
+@use 'blocks/work-card';
+
+@use 'blocks/footer';
+@use 'blocks/soc1al';
+
+@import '../../node_modules/aos/dist/aos.css';
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
