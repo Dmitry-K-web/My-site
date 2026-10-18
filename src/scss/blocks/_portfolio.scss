@@ -1,26 +1,29 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 .portfolio {
+	overflow-x: hidden;
+	&__inner {
+	}
 
-    &__inner {}
+	&__header {
+	}
 
-    &__header {}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 50px;
+	}
 
-    &__body {
-        display: flex;
-        flex-direction: column;
-        row-gap: 50px;
-    }
+	&__item {
+		@include mobile-above {
+			&:nth-child(even) .portfolio__card {
+				.work-card__body {
+					order: -1;
+				}
+			}
+		}
+	}
 
-    &__item {
-        @include mobile-above {
-            &:nth-child(even) .portfolio__card {
-                .work-card__body {
-                    order: -1;
-                }
-            }
-        }
-    }
-
-    &__card {}
+	&__card {
+	}
 }
