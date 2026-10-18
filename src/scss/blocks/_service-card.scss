@@ -1,0 +1,17 @@
+@use "../helpers" as *;
+
+.service-card {
+    border: var(--border-slim-accent);
+    border-radius: var(--border-radius);
+    padding: 20px;
+
+		&__title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--color-accent);
+            @include fluid-text(22, 18);
+		}
+		&__text {
+		}
+}

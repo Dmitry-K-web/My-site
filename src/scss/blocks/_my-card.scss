@@ -6,7 +6,7 @@
     background-color: var(--color-bg-secondary);
     box-shadow: var(--box-shadow);
     padding: rem(50) rem(30);
-    max-width: rem(320);
+    max-width: rem(360);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
 
     @include mobile-s {
         padding: rem(30) rem(25);
-        max-width: rem(290);
+        max-width: rem(320);
     }
 
     &__head {
@@ -72,7 +72,6 @@
     }
 
     &__skill {
-        text-transform: uppercase;
         padding: rem(8);
         color: var(--color-black);
         background-color: var(--color-accent);

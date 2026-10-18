@@ -11,14 +11,14 @@ svg * {
 
 
 body {
-    @include fluid-text(16, 14);
+    @include fluid-text(17, 15);
     font-weight: 400;
     background-color: var(--color-bg);
     color: var(--color-text);
     padding-top: var(--header-height);
     overflow-x: hidden;
     font-family: var(--font-family), sans-serif;
-    line-height: 1.1;
+    line-height: 1.25;
 
     &.lock {
         overflow: hidden;

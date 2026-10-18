@@ -53,7 +53,7 @@
         }
 
         @include mobile {
-            justify-self: center;
+            display: none;
         }
 
     }

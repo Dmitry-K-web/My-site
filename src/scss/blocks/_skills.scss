@@ -1,28 +1,57 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 .skills {
+	overflow-x: hidden;
+	&__inner {
+	}
+	&__header {
+	}
+	&__subtitle {
+		text-align: center;
+		margin-bottom: var(--margin-16);
+		color: var(--color-accent);
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		@include mobile {
+			row-gap: 25px;
+		}
+	}
+	&__group {
+	}
+	&__services {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		grid-auto-rows: 1fr;
+		@include mobile {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 20px;
+			grid-auto-rows: auto;
+		}
+	}
+	&__service {
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 30px;
 
-    &__inner {}
+		@include tablet {
+			grid-template-columns: repeat(4, 1fr);
+		}
 
-    &__header {}
+		@include mobile {
+			grid-template-columns: repeat(3, 1fr);
+		}
 
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 30px;
+		@include mobile-s {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 
-        @include tablet {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        @include mobile {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        @include mobile-s {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    &__item {}
+	&__item {
+	}
 }

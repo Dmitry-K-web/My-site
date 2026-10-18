@@ -3,6 +3,7 @@
 .work-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding: rem(48);
     gap: rem(40);
     border-radius: var(--border-radius);

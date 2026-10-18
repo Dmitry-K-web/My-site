@@ -1,76 +1,113 @@
 {
-    "header": {
-        "logoLabel": "Logo",
-        "menu": {
-            "home": "Home",
-            "about": "About Me",
-            "skills": "Skills",
-            "portfolio": "Portfolio",
-            "contacts": "Contacts"
-        },
-        "switches": {
-            "langLabel": "Language switch",
-            "themeLabel": "Theme switch"
-        },
-        "burgerMenu": {
-            "title": "Open menu",
-            "ariaLabel": "Open menu"
-        },
-        "mobileMenu": {
-            "home": "Home",
-            "about": "About Me",
-            "skills": "Skills",
-            "portfolio": "Portfolio",
-            "contacts": "Contacts"
-        }
-    },
-    "hero": {
-        "title": "Hello<br>I am <span class=\"hero__title--name\">Dmitry</span>,<br>Web Developer",
-        "description": "I build websites that don't break on phones, don't load forever, and don't make users suffer. If you need a developer you can trust with your project — you're in the right place.",
-        "scrollLink": {
-            "aria-label": "Go to contacts"
-        },
-        "scrollText": "Write to me",
-        "card": {
-            "img": {
-                "alt": "My portrait"
-            },
-            "name": "Dmitry",
-            "profession": "Frontend Developer",
-            "location": "Belarus",
-            "status": "Freelancer"
-        }
-    },
-    "about": {
-        "title": "About Me",
-        "imgAlt": "Person with a laptop",
-        "paragraphs": [
-            "Hi! My name is Dmitry, and I create websites that work <span>fast</span>, look <span>clean</span>, and bring <span>joy</span> to users. For me, programming isn’t just code — it’s a way to turn an idea into a live, interactive product.",
-            "I work with <span>HTML</span>, <span>CSS</span>, <span>SCSS</span>, and <span>JavaScript</span>, and use <span>Gulp</span> and <span>Vite</span>. I often take on projects using <span>WordPress</span>.",
-            "I can not only <span>create clean layouts</span>, but also <span>design structure</span>, <span>improve performance</span>, and make the website <span>easy to use</span>.",
-            "I take every project seriously: I <span>meet deadlines</span>, <span>write clear code</span>, and <span>pay attention to detail</span>. I'm open to collaboration — feel free to reach out if you're looking for a reliable developer."
-        ]
-    },
-    "skills": {
-        "title": "Skills",
-        "description": "Skills, tools and technologies I’m good at:"
-    },
-    "portfolio": {
-        "title": "Portfolio",
-        "description": "Some examples of projects I've worked on:",
-        "cards": [
-            {
-                "title": "Aesthetic Space",
-                "text": "Interior design studio website featuring responsive layout, interactive slider, and animated elements. Includes a pop-up form, cross-browser compatibility, accessibility compliance, and optimized for fast page loading."
-            },
-            {
-                "title": "Survive At All Costs",
-                "text": "Interactive one-page website for a computer game. Features responsive design, multilingual support, animations, and a slider. Ensures cross-browser compatibility, accessibility, and fast page loading."
-            }
-        ]
-    },
-    "footer": {
-        "title": "Contacts",
-        "description": "Open to interesting challenges, unconventional ideas, and simply great projects. Don’t hesitate — reach out!"
-    }
+	"header": {
+		"logoLabel": "Logo",
+		"menu": {
+			"home": "Home",
+			"about": "About Me",
+			"skills": "What I Do",
+			"portfolio": "Portfolio",
+			"contacts": "Contacts"
+		},
+		"switches": {
+			"langLabel": "Language switch",
+			"themeLabel": "Theme switch"
+		},
+		"burgerMenu": {
+			"title": "Open menu",
+			"ariaLabel": "Open menu"
+		},
+		"mobileMenu": {
+			"home": "Home",
+			"about": "About Me",
+			"skills": "What I Do",
+			"portfolio": "Portfolio",
+			"contacts": "Contacts"
+		}
+	},
+	"hero": {
+		"title": "Hello,<br>I'm <span class=\"hero__title--name\">Dmitry</span><br>Web Developer",
+		"description": "I develop fast, responsive websites that work seamlessly across all devices. I build projects from scratch, improve existing websites, and take on individual development and maintenance tasks.",
+		"scrollLink": {
+			"aria-label": "Go to contacts"
+		},
+		"scrollText": "Contact Me",
+		"card": {
+			"img": {
+				"alt": "My portrait"
+			},
+			"name": "Dmitry",
+			"profession": "Web Developer",
+			"location": "Belarus",
+			"status": "Freelancer"
+		}
+	},
+	"about": {
+		"title": "About Me",
+		"imgAlt": "Person with a laptop",
+		"paragraphs": [
+			"Hi! My name is Dmitry. I’m a web developer specializing in <span>website development</span>, <span>customization</span>, and <span>maintenance</span>.",
+
+			"I work with <span>HTML</span>, <span>SCSS</span>, <span>BEM</span>, and <span>JavaScript</span>, using <span>Vite</span> and <span>Gulp</span> as build tools. I develop and customize projects on <span>WordPress</span> and <span>1C-Bitrix</span>, including themes, templates, plugins, and existing functionality. I also have experience with<span> other CMS platforms</span> and can easily adapt to new systems.",
+
+			"For me, it’s important to focus not only on the visual side of a website, but also on its practical aspects: <span>responsiveness</span>, <span>loading speed</span>, <span>technical SEO</span>, and reliable performance across different devices.",
+
+			"I can handle a <span>project from start to finish</span>, join an <span>existing development</span>, or take on an <span>individual technical task</span>. I <span>respect deadlines</span>, pay close attention to detail, and strive to write <span>clear and maintainable code</span>."
+		]
+	},
+	"skills": {
+		"title": "What I Do",
+		"description": "The tasks I handle and the tools I use:",
+		"services": {
+			"title": "How I Can Help",
+			"cards": [
+				{
+					"title": "1C-Bitrix",
+					"text": "Customizing components and templates, working with Information Blocks (IBlock) and site settings, bug fixing, configuring forms and integrations, and ongoing technical support."
+				},
+				{
+					"title": "WordPress",
+					"text": "Installing and customizing themes, converting HTML/CSS layouts into WordPress, working with ACF and plugins, configuring and extending WooCommerce, bug fixing, and performance optimization."
+				},
+				{
+					"title": "Front-End Development",
+					"text": "Responsive front-end development, writing and updating HTML, SCSS, and JavaScript, creating interactive UI components, cross-browser testing, and layout bug fixing."
+				},
+				{
+					"title": "Technical SEO",
+					"text": "Technical site audits, configuring robots.txt and sitemap.xml, fixing technical errors and redirects, optimizing meta tags and site structure, and improving page loading speed."
+				}
+			]
+		},
+		"tools": "Skills & Tools"
+	},
+	"portfolio": {
+		"title": "Portfolio",
+		"description": "Some examples of projects I've worked on:",
+		"cards": [
+			{
+				"title": "Aesthetic Space",
+				"text": "Interior design studio website featuring responsive layout, interactive slider, and animated elements. Includes a pop-up form, cross-browser compatibility, accessibility compliance, and optimized for fast page loading."
+			},
+			{
+				"title": "Survive At All Costs",
+				"text": "Interactive one-page website for a computer game. Features responsive design, multilingual support, animations, and a slider. Ensures cross-browser compatibility, accessibility, and fast page loading."
+			},
+			{
+				"title": "1C-Bitrix Website Improvements",
+				"text": "Performed comprehensive improvements to a website built on 1C-Bitrix. Updated global and local styles, fixed interface issues, reworked the functionality of individual website sections, and replaced and configured contact forms. <br/> <br/> Developed a responsive banner for the homepage, creating the required information blocks and custom component templates. Also created banners for internal pages, ensuring proper display on mobile devices."
+			},
+			{
+				"title": "WordPress Website Optimization and Maintenance",
+				"text": "Performed comprehensive technical improvements on a WordPress website, identifying and resolving plugin conflicts, configuring caching and loading optimization, and fixing issues related to LCP images and CLS. <br /><br /> Conducted technical SEO optimization by updating page meta tags, refining robots.txt and internal links, configuring Open Graph metadata, implementing Schema.org structured data, and correcting heading structure issues involving H1 tags. <br /><br /> Additionally, implemented breadcrumb navigation and resolved display issues, added the necessary image dimensions to reduce CLS, and checked the website for hidden duplicate pages. <br /><br /> Also provided ongoing technical maintenance, including creating new sections, publishing articles, fixing visual issues, and improving existing pages."
+			},
+			{
+				"title": "ASPRO Online Store Improvements and Optimization",
+				"text": "Performed comprehensive improvements to an online store built on 1C-Bitrix using the ASPRO solution. Fixed display issues in product cards and the catalog, updated the product specifications table, restored the shipping cost calculator, and developed a custom template for the “Best Offers” section to ensure proper handling of product variations. <br /><br /> Conducted technical SEO optimization by improving indexing settings, updating robots.txt and sitemap.xml, configuring redirects, updating meta tags across more than 60 pages and sections, and checking heading structure and internal links. <br /><br /> Improved website performance by configuring caching and Composite Mode, optimizing CSS and JavaScript, compressing homepage banner images, and implementing image preloading. Also reviewed Lazy Load functionality and resolved issues related to optimization settings. <br /><br /> Additionally, fixed interface and mobile layout issues, improved breadcrumb navigation, and implemented functionality for answering customer inquiries via email directly from the administrative panel."
+			}
+		]
+	},
+	"footer": {
+		"title": "Contacts",
+		"description": "Open to interesting challenges, unconventional ideas, and simply great projects. Don’t hesitate — reach out!"
+	}
 }
